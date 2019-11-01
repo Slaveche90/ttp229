@@ -3,6 +3,13 @@ This repository is for TTP229 Capacitive 4x4 Keypad Module connected to the Rasp
 
 TTP229 Capacitive 4x4 Keypad Module has two sets of jumpers which you have to connet to select the specific mode for the module. For this example script we selected a jumper JP2, which is for the 16 channel mode. All other jupers are disconnected.
 
+# How to run the script  
+
+To run the scrip, open the terminal app in the directory where you downloaded the script, then run this command:  
+```
+  pyhton3 ttp229.py
+```
+
 # Explanation of the code  
 
 First we import libraries for the time and the GPIO pins. Then we set GPIO pin names to BCM, and disable warnings.
