@@ -1,9 +1,9 @@
-# ttp229
-This repository is for TTP229 Capacitive 4x4 Keypad Module connected to the Raspberry Pi 3
+# TTP229 Capacitive 4x4 Keypad Module  
+This repository is for TTP229 Capacitive 4x4 Keypad Module connected to the Raspberry Pi 3  
 
 TTP229 Capacitive 4x4 Keypad Module has two sets of jumpers which you have to connet co select specific mode for module. For this example script we selected jumper JP2, which is for 16 channel mode. All other jupers are disconnected.
 
-# Explanation of the code
+# Explanation of the code  
 
 First we import libraries for the time and the GPIO pins. Then we set GPIO pin names to BCM, and disable warnings.
 
@@ -23,13 +23,13 @@ In the interrupt() function first we wait for additional 5 microseconds (after D
 
 Also you can see that we touched the pad number 5 by counting clock signal changes before SDO signal changed the state to LOW (in the center of the image).
 
-# Jumper names:
+# Jumper names:  
 
 ![alt](https://github.com/Slaveche90/ttp229/blob/master/JumperNames.png?raw=true)
 
-# Connection diagram
+# Connection diagram  
 
-![alt](https://github.com/Slaveche90/ttp229/blob/master/ConnectionDiagram.png?raw=true)
+![alt](https://github.com/Slaveche90/ttp229/blob/master/ConnectionDiagram.png?raw=true)  
 
 Keypad pin---Raspberry Pi pin  
 VCC----------3V3----[pin 1]---Red wire  
