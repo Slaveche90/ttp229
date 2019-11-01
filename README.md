@@ -21,7 +21,9 @@ In the interrupt() function first we wait for additional 5 microseconds (after D
 
 ![alt](https://github.com/Slaveche90/ttp229/blob/master/Signals.png?raw=true)
 
-Also you can see that we touched the pad number 5 by counting clock signal changes before SDO signal changed the state to LOW (in the center of the image).
+Also you can see that we touched the pad number 5 by counting clock signal changes before SDO signal changed the state to LOW (in the center of the image).  
+
+If you experience any errors, make sure to choose the GPIO pins that have no other secondary functions (like I2C pins, or SPI pins). If you choose any GPIO pin with the secondary function, make sure to turn off the interface for that secondary function.
 
 # Jumper names:  
 
