@@ -46,4 +46,6 @@ try: # Main program loop
 # Scavenging work after the end of the program
 except KeyboardInterrupt:
   print("Script End!")
+
+finally:
   GPIO.cleanup()
